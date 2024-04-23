@@ -1,0 +1,12 @@
+applications:
+  - name: muni-project-one
+    random-route: true
+    memory: 256M
+    buildpacks:
+      - nodejs_buildpack
+    env:
+      APP_ID: ((app_id))
+      PRIVATE_KEY: ((private_key))
+      WEBHOOK_SECRET: ((webhook_secret))
+      GITHUB_CLIENT_ID: ((github_client_id))
+      GITHUB_CLIENT_SECRET: ((github_client_secret))
